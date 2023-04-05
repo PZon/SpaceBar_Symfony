@@ -1,4 +1,6 @@
-when@dev:
-    _errors:
-        resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
-        prefix: /_error
+# see https://symfony.com/doc/current/reference/configuration/framework.html
+
+#when@dev:
+ #   _errors:
+  #      resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
+   #     prefix: /_error
