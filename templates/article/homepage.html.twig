@@ -52,9 +52,14 @@
                 {% if not isMac %}
                     <hr>
                     <small>lucky you, you are not Mac user ?</small>
+                {% elseif isMac %}
+                <hr>
+                    <small>Phathetic, you are  Mac user ?</small>
                 {% endif %}
           </div>
-                {{ render(controller('App\\Controller\\PartialController::trendingQuotes')) }}
+                {{ render(controller('App\\Controller\\PartialController::trendingQuotes',
+                {_isMac: isMac}
+                )) }}
             </div>
         </div>
     </div>
